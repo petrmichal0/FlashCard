@@ -7,6 +7,9 @@
 body {
   font-family: sans-serif;
   font-size: 48px;
+  padding: 40px;
+  width: 1024px;
+  margin: 0 auto;
 }
 
 .flashcards {
@@ -15,20 +18,17 @@ body {
   gap: 20px;
 }
 
-.flashcards div {
-  border: 1px solid #f7f7f7;
-  background-color: #f7f7f7;
-  border-radius: 7px;
+.flashcards__item {
+  background-color: #e4dcdc;
+  border-radius: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  padding: 100px;
+  padding: 50px;
   cursor: pointer;
 }
 
-div.selected {
-  border: 1px solid #e03131;
+.selected {
   background-color: #e03131;
   color: #fff;
   font-weight: bold;

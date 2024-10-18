@@ -103,8 +103,8 @@ FlashCard/
 
 ## Third-Party Libraries
 
-* React Router
+* None
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the LICENSE file for details.

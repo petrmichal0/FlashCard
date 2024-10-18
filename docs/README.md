@@ -1,5 +1,5 @@
 ## Project Title and Description
-FlashCard is a web application designed to help users create, manage, and study flashcards. Users can easily add new flashcards, edit existing ones, and quiz themselves on various topics.
+FlashCard is a web application designed to help users quiz themselves on various topics. The app focuses on studying flashcards, but it doesn't include a feature to add or edit flashcards directly.
 
 ## Badges
 ![Static Badge](https://img.shields.io/badge/status-online-brightgreen)
@@ -20,7 +20,6 @@ FlashCard is a web application designed to help users create, manage, and study 
 - [License](#license)
 
 ## Features
-- Create and manage flashcards
 - Quiz yourself on various topics
 - User-friendly interface
 

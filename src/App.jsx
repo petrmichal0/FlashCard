@@ -2,7 +2,7 @@ import { useState } from "react";
 import { questions } from "./data";
 
 function App() {
-  const [selectedId, setSelectedId] = useState("");
+  const [selectedId, setSelectedId] = useState(null);
 
   const handleClick = (id) => {
     setSelectedId((prevId) => (prevId === id ? "" : id));

@@ -2,24 +2,25 @@ import { useState } from "react";
 import { questions } from "./data";
 
 function App() {
-  const [selectedId, setSelectedId] = useState("");
+  const [selectedId, setSelectedId] = useState(null);
 
-  function handleClick(id) {
-    setSelectedId(id === selectedId ? "" : id);
-  }
+  const handleClick = (id) => {
+    setSelectedId((prevId) => (prevId === id ? "" : id));
+  };
 
   return (
     <div className="flashcards">
-      {questions.map((question) => {
+      {questions.map(({ id, question, answer }) => {
+        const isSelected = id === selectedId;
+        const content = isSelected ? answer : question;
+
         return (
           <div
-            key={question.id}
-            onClick={() => handleClick(question.id)}
-            className={`flashcards__item ${
-              question.id === selectedId ? "selected" : ""
-            }`}
+            key={id}
+            onClick={() => handleClick(id)}
+            className={`flashcards__item ${isSelected ? "selected" : ""}`}
           >
-            {question.id === selectedId ? question.answer : question.question}
+            {content}
           </div>
         );
       })}

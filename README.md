@@ -7,7 +7,7 @@ FlashCard is a web application designed to help users quiz themselves on various
 ![Static Badge](https://img.shields.io/badge/status-online-brightgreen)
 
 ## Quick Look
-<img src="https://github.com/user-attachments/assets/5075e78e-84b7-4d3d-9f7a-6318de6fe083" width="700" alt="FlashCard App Demo">
+<img src="https://github.com/user-attachments/assets/0875daa7-47f8-4d59-8db2-74e85af4e3f7" width="700" alt="FlashCard App Demo">
 
 ## Table of Content
 - [Project Title and Description](#project-title-and-description)

@@ -1,16 +1,16 @@
 import { useState } from "react";
-import { questions } from "./data";
+import { questions, Question } from "./data";
 
 function App() {
-  const [selectedId, setSelectedId] = useState(null);
+  const [selectedId, setSelectedId] = useState<number | null>(null);
 
-  const handleClick = (id) => {
-    setSelectedId((prevId) => (prevId === id ? "" : id));
+  const handleClick = (id: number): void => {
+    setSelectedId((prevId) => (prevId === id ? null : id));
   };
 
   return (
     <div className="flashcards">
-      {questions.map(({ id, question, answer }) => {
+      {questions.map(({ id, question, answer }: Question) => {
         const isSelected = id === selectedId;
         const content = isSelected ? answer : question;
 

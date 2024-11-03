@@ -12,12 +12,12 @@ jobs:
 
     steps:
       - name: Check out the code
-        uses: actions/checkout@v3  # Aktualizace na v3
+        uses: actions/checkout@v3  
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3  # Aktualizace na v3
+        uses: actions/setup-node@v3 
         with:
-          node-version: '20'  # Použij verzi, kterou potřebuješ
+          node-version: '20'  
 
       - name: Install dependencies
         run: npm install
